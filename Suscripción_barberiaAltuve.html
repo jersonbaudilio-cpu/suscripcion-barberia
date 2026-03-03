@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Suscripción Barbería - Jerson Altuve</title>
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #1a1a1a, #000000);
+    color: #ffffff;
+}
+.container {
+    max-width: 600px;
+    margin: auto;
+    padding: 40px 20px;
+}
+h1 {
+    text-align: center;
+    color: gold;
+}
+.plan {
+    background: #111;
+    border: 1px solid gold;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+}
+.price {
+    font-size: 28px;
+    color: gold;
+}
+button {
+    background: gold;
+    color: black;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 5px;
+    border: none;
+}
+.footer {
+    font-size: 12px;
+    color: #aaa;
+    margin-top: 20px;
+    text-align: center;
+}
+.instructions {
+    background: #111;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+    border: 1px solid gold;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Jerson Altuve<br>Suscripción Premium</h1>
+
+    <div class="plan">
+        <h3>4 Cortes Mensuales</h3>
+        <div class="price">40€ / mes</div>
+        <p>✔ 1 corte semanal<br>✔ No acumulables<br>✔ No reembolsables</p>
+    </div>
+
+    <div class="plan">
+        <h3>4 Cortes + Barba y Cejas</h3>
+        <div class="price">60€ / mes</div>
+        <p>✔ 1 servicio semanal<br>✔ No acumulables<br>✔ No reembolsables</p>
+    </div>
+
+    <h2>Formulario de Afiliación</h2>
+
+    <form action="mailto:jersonbaudilio@gmail.com" method="post" enctype="text/plain">
+        <input type="text" name="Nombre" placeholder="Nombre completo" required>
+        <input type="tel" name="Telefono" placeholder="Teléfono" required>
+        <input type="email" name="Email" placeholder="Email" required>
+        
+        <select name="Plan" required>
+            <option value="">Selecciona tu plan</option>
+            <option value="4 Cortes - 40€">4 Cortes - 40€</option>
+            <option value="4 Cortes + Barba - 60€">4 Cortes + Barba - 60€</option>
+        </select>
+
+        <select name="Metodo de Pago" required>
+            <option value="">Método de pago</option>
+            <option value="Bizum">Bizum</option>
+            <option value="Efectivo en local">Efectivo en local</option>
+        </select>
+
+        <button type="submit">Enviar Solicitud</button>
+    </form>
+
+    <div class="instructions">
+        <strong>Instrucciones de Pago:</strong><br><br>
+        📲 Bizum al número: <strong>+34 643 74 09 46</strong><br>
+        Concepto: Nombre + Suscripción<br><br>
+        💰 Inscripción: 40€ del mes + 40€ depósito.<br>
+        Cancelación con aviso previo de 7 días.
+    </div>
+
+    <div class="footer">
+        Jerson Altuve Barbería © 2026
+    </div>
+</div>
+
+</body>
+</html>
