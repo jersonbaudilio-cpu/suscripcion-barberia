@@ -1,1 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
 
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Suscripción Barbería Altuve</title>
+
+<style>
+
+body{
+font-family:Arial;
+background:#0f0f0f;
+color:white;
+margin:0;
+}
+
+.container{
+max-width:600px;
+margin:auto;
+padding:30px;
+}
+
+h1{
+text-align:center;
+color:gold;
+}
+
+.plan{
+background:#1b1b1b;
+padding:20px;
+border-radius:10px;
+border:1px solid gold;
+margin-top:20px;
+}
+
+.price{
+font-size:28px;
+color:gold;
+}
+
+input,select,button{
+width:100%;
+padding:12px;
+margin-top:10px;
+border-radius:5px;
+border:none;
+}
+
+button{
+background:gold;
+color:black;
+font-size:16px;
+cursor:pointer;
+}
+
+.bizum{
+background:#1b1b1b;
+padding:20px;
+border-radius:10px;
+margin-top:20px;
+border:1px solid gold;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Suscripción Barbería Altuve</h1>
+
+<div class="plan">
+
+<h3>Plan Corte</h3>
+
+<div class="price">40€ / mes</div>
+
+<p>
+✔ 4 cortes al mes<br>
+✔ 1 corte por semana
+</p>
+
+</div>
+
+<div class="plan">
+
+<h3>Plan Corte + Barba</h3>
+
+<div class="price">60€ / mes</div>
+
+<p>
+✔ 4 servicios al mes
+</p>
+
+</div>
+
+<h2>Registro</h2>
+
+<input id="nombre" placeholder="Nombre completo">
+<input id="telefono" placeholder="Teléfono">
+
+<select id="plan">
+<option>4 Cortes - 40€</option>
+<option>4 Cortes + Barba - 60€</option>
+</select>
+
+<button onclick="registro()">Registrarme</button>
+
+<div class="bizum">
+
+<h3>Pagar con Bizum</h3>
+
+<p>
+
+Número Bizum<br><br>
+
+<strong>643740946</strong>
+
+<br><br>
+
+Concepto<br>
+
+<strong>Nombre + Suscripción</strong>
+
+</p>
+
+</div>
+
+</div>
+
+<script>
+
+function registro(){
+
+let nombre=document.getElementById("nombre").value;
+
+if(nombre===""){
+alert("Introduce tu nombre");
+return;
+}
+
+alert("Registro enviado. Ahora realiza el pago por Bizum.");
+
+}
+
+</script>
+
+</body>
+</html>
